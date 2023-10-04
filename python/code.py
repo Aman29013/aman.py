@@ -1,13 +1,14 @@
-age=int(input('enter age'))
-nationality=input('are you a citizen of india')
-voter_id=input('do you have voter id?')
-if nationality=='yes':
-    if age>18:
-        if voter_id=='yes':
-            print('eligible')
-        else:
-            print('not eligible')
-    else:
-        print('f due to age')
-else:
-    print('f due to nationality')
+a=[2,3,4,5,6,7,8,'aman','saksham','vaibhav',True,False]
+x=[]
+y=[]
+z=[]
+
+for i in a :
+    if type(i)==int:
+         x=x.append(i)
+    elif type(i)==str:
+         y=y.append(i)
+    elif type(i)==bool:
+        z=z.append(i)
+print(x,y,z)
+    
